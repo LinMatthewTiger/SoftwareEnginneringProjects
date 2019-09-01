@@ -1,0 +1,84 @@
+package lab1out;
+
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+
+public class ServerGUI extends JFrame
+{
+   //Data Fields go here
+	private JLabel status; //Initialized to “Not Connected”
+	private String[] labels = {"Port #", "Timeout"};
+	private JTextField[] textFields = new JTextField[labels.length];
+	private JTextArea log;
+
+
+   //Methods go here
+	public ServerGUI(String title) {
+		 // Inputs
+		int i = 0;
+		   JPanel Inputs = new JPanel(new FlowLayout());
+		   JPanel center = new JPanel(new GridLayout(labels.length,1,10,10));
+		   
+		   for (i = 0; i < labels.length; i++)
+		   {
+		   
+		     JLabel j2 = new JLabel(labels[i]);
+		     JTextField jtf = new JTextField(10);
+		     
+		     if(i == 0) {
+		    	 jtf.setEditable(false);
+		     }
+		     
+		     center.add(j2);
+		     center.add(jtf);
+		    
+		   }
+		   
+		   
+		   
+		   
+		   JPanel center2 = new JPanel(new GridLayout(4, 1, -15, -15));
+		   
+		   //Client Data Text Area
+		   JLabel data = new JLabel("Enter Client Data Below");
+		   clientArea = new JTextArea(5,20);
+		   center2.add(data);
+		   center2.add(new JScrollPane(clientArea));
+		   
+		   
+		   //Server Data Text Area
+		   data = new JLabel("Recieve Server Data");
+		   serverArea = new JTextArea(5, 20);
+		   serverArea.setEditable(false);
+		   center2.add(data);
+		   center2.add(new JScrollPane(serverArea));
+		   
+		   //Display inputs
+		   Inputs.add(center);
+		   Inputs.add(center2);
+		   this.add(Inputs, BorderLayout.CENTER);
+		   
+		   // Make buttons 
+		   connect = new JButton("connect");
+		   submit = new JButton("submit");
+		   stop = new JButton("stop");
+		   
+		   // Make Jpanel named south
+		   JPanel south = new JPanel(new FlowLayout());
+		   
+		   // Add and display buttons
+		   south.add(connect);
+		   south.add(submit);
+		   south.add(stop);
+		   this.add(south, BorderLayout.SOUTH);
+	}
+}
+

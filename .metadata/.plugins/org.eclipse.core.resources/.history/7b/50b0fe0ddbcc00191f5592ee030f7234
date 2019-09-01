@@ -1,0 +1,41 @@
+package lab1out;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class ServerGUI extends JFrame {
+	// Data Fields go here
+	private JLabel status; // Initialized to “Not Connected”
+	private String[] labels = { "Port #", "Timeout" };
+	private JTextField[] textFields = new JTextField[labels.length];
+	private JTextArea log;
+
+	// Methods go here
+	public ServerGUI(String title) {
+		// Inputs
+		int i = 0;
+		JPanel Inputs = new JPanel(new FlowLayout());
+		JPanel center = new JPanel(new GridLayout(labels.length, 1, 10, 10));
+
+		for (i = 0; i < labels.length; i++) {
+
+			JLabel j2 = new JLabel(labels[i]);
+			JTextField jtf = new JTextField(10);
+
+			if (i == 0) {
+				jtf.setEditable(false);
+			}
+
+			center.add(j2);
+			center.add(jtf);
+
+		}
+
+	}
+}
