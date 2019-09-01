@@ -1,0 +1,78 @@
+package lab1in;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class ClientGUI extends JFrame
+{
+  private JLabel status;
+  private JButton connect;
+  private JButton submit;
+  private JButton stop;
+  
+  public ClientGUI(String title)
+  {
+    int i = 0;
+    
+    this.setTitle(title);	
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+    //ADD YOUR CODE HERE TO CREATE THE STATUS JLABEL AND THE JBUTTONS
+    
+
+   
+   JLabel status = new JLabel("Not Connected",JLabel.CENTER);
+   status.setForeground(Color.RED);
+   
+   JPanel north = new JPanel(new FlowLayout());
+   north.add(status, BorderLayout.NORTH);
+   
+   this.add(north);
+
+   	
+   
+   JButton connect = new JButton("connect");
+   JButton submit = new JButton("submit");
+   JButton stop = new JButton("stop");
+   
+   JPanel south = new JPanel(new FlowLayout());
+   
+   south.add(connect);
+   south.add(submit);
+   south.add(stop);
+   
+   this.add(south, BorderLayout.SOUTH);
+   
+   connect.addActionListener(new ActionListener() {
+	    public void actionPerformed(ActionEvent e) {
+	        frame.toFront();
+	    }
+	});
+   
+   
+   setSize(300,400);
+   setVisible(true);
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+    
+    
+  }
+  
+  public static void main(String[] args)
+  {
+    new ClientGUI(args[0]); //args[0] represents the title of the GUI
+  }
+}
+
