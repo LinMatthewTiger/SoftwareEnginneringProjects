@@ -81,21 +81,18 @@ public class ServerGUI extends JFrame {
 		Listen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Listen Button Pressed");
-				System.out.println("Listen Button Pressed");
 			}
 		});
 
 		Close.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Close Button Pressed");
-				System.out.println("Close Button Pressed");
 			}
 		});
 
 		Stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Stop Button Pressed");
-				System.out.println("Stop Button Pressed");
 			}
 		});
 		

@@ -1,9 +1,0 @@
-package lab1out;
-
-public class ServerGUI extends JFrame
-{
-   //Data Fields go here
-
-   //Methods go here
-}
-

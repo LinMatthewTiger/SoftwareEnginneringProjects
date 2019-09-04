@@ -97,21 +97,21 @@ public class ClientGUI extends JFrame {
 		connect.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Connect Button Pressed");
-				System.out.println("Connect Button Pressed");
+				System.out.print("Connect Button Pressed");
 			}
 		});
 
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Client Data: " + clientArea.getText());
-				System.out.println( "Client Data: " + clientArea.getText());
+				System.out.print( "Client Data: " + clientArea.getText());
 			}
 		});
 
 		stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Stop Button Pressed");
-				System.out.println("Stop Button Pressed");
+				System.out.print("Stop Button Pressed");
 			}
 		});
 
