@@ -12,6 +12,9 @@
 	<item key="org.eclipse.jdt.uiformatter_page.preference_tree_expansion" value="10.0..1.0.000.0.0.0.0.0.0.0.0.0..00.0.0.0.0.0.0.0.0.0.0..00.0.0.0.0.0.0..00.0.0.0..00.0.0.0...00.0..000.0..0.0..000.0.0.0.0.0.0.0.0.0.0...00.0..0.."/>
 	<item key="org.eclipse.jdt.uiformatter_page.preference_scroll_position" value="0"/>
 	<item key="org.eclipse.jdt.ui.codeformatter.create_profile_dialog.open_edit" value="true"/>
+	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
+	<item key="org.eclipse.jdt.ui.last.external.project" value="C:\Users\patbo\Downloads\Java2DPacmanGame-master\Java2DPacmanGame-master"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\patbo\Documents\SoftwareEnginneringProjects\LabIn"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
