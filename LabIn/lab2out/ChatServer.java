@@ -63,6 +63,7 @@ public class ChatServer extends AbstractServer{
 		log.append("Server Stopped Accepting New Clients - Press Listen to Start\n");
 		status.setText("Stopped");
 		status.setForeground(Color.RED);
+		
 	}
 	
 	//Invoked by stopped() and close()
@@ -70,7 +71,7 @@ public class ChatServer extends AbstractServer{
 		log.append("Server and all current clients are closed - Press Listen to Restart\n");
 		status.setText("Close");
 		status.setForeground(Color.RED);
-		
+		Thread.currentThread().interrupt();
 	}
 
 	//Something

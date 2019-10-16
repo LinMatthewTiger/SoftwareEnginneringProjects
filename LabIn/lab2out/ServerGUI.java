@@ -117,7 +117,7 @@ public class ServerGUI extends JFrame {
 		Close.addActionListener(new ActionListener() {
 			//Condition if the server is not listening
 			public void actionPerformed(ActionEvent e) {
-				if(server.isListening() == false) {
+				if(!server.isListening()) {
 					log.append("Server not currently started\n");
 					System.out.println("Server not currently started\\n");
 					
@@ -137,7 +137,7 @@ public class ServerGUI extends JFrame {
 		Stop.addActionListener(new ActionListener() {
 			//Condition if the server is not listening
 			public void actionPerformed(ActionEvent e) {
-				if(server.isListening() == false) {
+				if(!server.isListening()) {
 					log.append("Server not currently started\n");
 					System.out.println("Server not currently started\n");
 				}
